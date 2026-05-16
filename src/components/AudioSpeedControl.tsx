@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 
 import { EditRecipe, SPEED_STEPS } from "@/lib/types";
-import { Volume2, VolumeX, Gauge } from "lucide-react";
+import { Volume2, VolumeX, Gauge, Info } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface Props {
@@ -114,6 +114,15 @@ useEffect(() => {
           ))}
         </div>
       </div>
+
+      {recipe.keepAudio && (recipe.trimStart > 0 || recipe.trimEnd !== null) && (
+        <div className="flex items-start gap-2 p-3 bg-blue-50/50 border border-blue-100 rounded-lg animate-fade-in">
+          <Info size={14} className="shrink-0 mt-0.5 text-blue-500" />
+          <p className="text-[10px] text-blue-700 leading-tight">
+            Note: If audio doesn't start within the selected range, the output will be silent.
+          </p>
+        </div>
+      )}
     </div>
   );
 }
