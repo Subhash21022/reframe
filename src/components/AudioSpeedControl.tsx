@@ -119,7 +119,7 @@ useEffect(() => {
         <div className="flex items-start gap-2 p-3 bg-blue-50/50 border border-blue-100 rounded-lg animate-fade-in">
           <Info size={14} className="shrink-0 mt-0.5 text-blue-500" />
           <p className="text-[10px] text-blue-700 leading-tight">
-            Note: If audio doesn't start within the selected range, the output will be silent.
+            Note: If audio doesn&apos;t start within the selected range, the output will be silent.
           </p>
         </div>
       )}
