@@ -3,6 +3,9 @@ import { useEffect } from "react";
 
 import { EditRecipe, SPEED_STEPS } from "@/lib/types";
 import { Volume2, VolumeX, Gauge, Info } from "lucide-react";
+import { EditRecipe } from '@/lib/types'
+import { SPEED_STEPS } from '@/lib/constants'
+import { Volume2, VolumeX, Gauge } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface Props {
